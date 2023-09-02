@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Expresso da Roça</title>
+    <meta name="description" content="Produtos da Fazenda">
+
+    <!-- Tags Open Graph -->
+    <meta property="og:title" content="Expresso da Roça">
+    <meta property="og:description" content="Produtos da Fazenda">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:url" content="https://expressodaroca.github.io/encomendas/">
+    
+    <!-- Links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+
+    <div class="container">
+        <!-- Menu -->
+        <nav class="navbar animate__animated animate__fadeInDown">
+            <ul class="nav nav-tabs">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Início</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo animate__animated animate__zoomIn animate__delay-1s">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo da empresa"></img>
+            </a>
+        </div>
+
+        <br><br><br><br>
+
+        <div class="text-center">
+            <h5 class="presentation-title animate__animated animate__slideInLeft animate__delay-2s"><strong>Descubra a natureza em sua essência!</h5>
+            <h5 class="subtitle animate__animated animate__slideInLeft animate__delay-3s">Produtos Agroecológicos frescos direto do produtor rural para a sua mesa. <br>
+                Sabor e qualidade cultivadosde forma sustentável!</strong></h5>
+        </div>
+
+        <br><br><br><br>
+
+        <div class="text-center">
+                <h1 class="presentation-title animate__animated animate__zoomIn animate__delay-4s"><strong>COMO FAZER UMA COMPRA?</strong></h1>
+                    <h2 class="presentation-subtitle animate__animated animate__zoomIn animate__delay-4s">Comece preenchendo o formulário. Após preencher e verificar se todos os dados estão corretos,
+                        selecione os itens que você deseja comprar. Após adicionar os itens ao carrinho, basta clicar no botão verde "Encomendar".<br>
+                        Você será direcionado com uma mensagem automática para o nosso WhatsApp, basta apenas apertar o "Enter" para enviar a mensagem.<br>
+                        <br>
+                        <strong>Pagamentos por PIX - Você pode clicar no ícone no final da página para copiar a chave e, em seguida, entre no seu aplicativo do banco
+                        e cole a chave no campo de PIX, basta digitar o valor do carrinho e realizar o pagamento. Envie o comprovante no nosso WhatsApp!</strong>
+                    </h2>
+            </div>
+
+            <br><br><br><br>
+
+            <h3 class="section-title"><strong>Preencha o Formulário</strong></h3>
+            <form id="encomendas-form">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+            
+                <label for="numero_de_celular">Número de celular com DDD:</label>
+                <input type="text" id="numero_de_celular" name="numero_de_celular" required><br><br>
+            
+                <label for="endereco">Endereço para entrega:</label>
+                <input type="text" id="endereco" name="endereco" required><br><br>
+
+                <label for="observacao">Observação:</label>
+                <input type="text" id="observacao" name="observacao" required><br><br>
+
+                <label for="produtos">Selecione os produtos:</label>
+                <select id="produtos" name="produtos" required>
+                    <option value="">Selecionar produtos</option>
+                    <option value="Biscoito de nata 400g" data-price="10">Biscoito de nata 400g R$ 10,00</option>
+                    <option value="Biscoito de nata com côco 400g" data-price="10">Biscoito de nata com côco 400g R$ 10,00</option>
+                    <option value="Rosquinha de leite 400g" data-price="10">Rosquinha de leite 400g R$ 10,00</option>
+                    <option value="Biscoito de laranja 400g" data-price="10">Biscoito de laranja 400g R$ 10,00</option>
+                    <option value="Biscoito de amendoim 400g" data-price="10">Biscoito de amendoim 400g R$ 10,00</option>
+                    <option value="Pão de cebola 400g" data-price="10">Pão de cebola 400g R$ 10,00</option>
+                    <option value="Pão de batata 400g" data-price="10">Pão de batata 400g R$ 10,00</option>
+                    <option value="Rosca-caseira-400g" data-price="10">Rosca caseira 400g R$ 10,00</option>
+                    <option value="Biscoito de polvilho escaldado 250g" data-price="12">Biscoito de polvilho escaldado 250g R$ 12,00</option>
+                    <option value="Biscoito de polvilho escaldado 500g" data-price="20">Biscoito de polvilho escaldado 500g R$ 20,00</option>
+                    <option value="Biscoito de polvilho tradicional 250g" data-price="15">Biscoito de polvilho tradicional 250g R$ 15,00</option>
+                    <option value="Biscoito de polvilho com queijo 250g" data-price="15">Biscoito de polvilho com queijo 250g R$ 15,00</option>
+                    <option value="Biscoito de polvilho com cebola 250g" data-price="15">Biscoito de polvilho com cebola 250g R$ 15,00</option>
+                    <option value="Ovos caipira dúzia" data-price="17">Ovos caipira dúzia R$ 17,00</option>
+                    <option value="Ovos caipira pente" data-price="45">Ovos caipira pente R$ 45,00</option>
+                    <option value="Cachaça de Mel e canela 275ml" data-price="15">Cachaça de Mel e canela 275ml R$ 15,00</option>
+                    <option value="Cachaça de Mel e canela 1 litro" data-price="40">Cachaça de Mel e canela 1 litro R$ 40,00</option>
+                    <option value="Cachaça branca 1 litro" data-price="25">Cachaça branca 1 litro R$ 25,00</option>
+                    <option value="Licor de figo 275ml" data-price="15">Licor de figo 275ml R$ 15,00</option>
+                    <option value="Licor de chocolate 275ml" data-price="15">Licor de chocolate 275ml R$ 15,00</option>
+                    <option value="Licor de genipapo 275ml" data-price="15">Licor de genipapo 275ml R$ 15,00</option>
+                    <option value="Licor de pequi 275ml" data-price="15">Licor de pequi 275ml R$ 15,00</option>
+                    <option value="Licor de menta 275ml" data-price="15">Licor de menta 275ml R$ 15,00</option>
+                    <option value="Licor de amarula 275ml" data-price="15">Licor de amarula 275ml R$ 15,00</option>
+                    <option value="Licor de goiaba 275ml" data-price="15">Licor de goiaba 275ml R$ 15,00</option>
+                    <option value="Licor de café 275ml" data-price="15">Licor de café 275ml R$ 15,00</option>
+                    <option value="Licor de doce de leite 275ml" data-price="15">Licor de doce de leite 275ml R$ 15,00</option>
+                    <option value="Licor de doce de leite DIET 275ml" data-price="15">Licor de doce de leite DIET 275ml R$ 15,00</option>
+                    <option value="Licor de jabuticaba 275ml" data-price="15">Licor de jabuticaba 275ml R$ 15,00</option>
+                    <option value="Licor de curaçau blue 275ml" data-price="15">Licor de curaçau blue 275ml R$ 15,00</option>
+                    <option value="Licor de cipó cravo-afrodisíaco 275ml" data-price="15">Licor de cipó cravo-afrodisíaco 275ml R$ 15,00</option>
+                    <option value="Vinho artesanal de jabuticaba 275ml" data-price="15">Vinho artesanal de jabuticaba 275ml R$ 15,00</option>
+                    <option value="Licor de chocolate 1 litro" data-price="40">Licor de chocolate 1 litro R$ 40,00</option>
+                    <option value="Licor de amarula 1 litro" data-price="40">Licor de amarula 1 litro R$ 40,00</option>
+                    <option value="Licor de café 1 litro" data-price="40">Licor de café 1 litro R$ 40,00</option>
+                    <option value="Licor de doce de leite 1 litro" data-price="40">Licor de doce de leite 1 litro R$ 40,00</option>
+                    <option value="Licor de doce de leite DIET 1 litro" data-price="40">Licor de doce de leite DIET 1 litro R$ 40,00</option>
+                    <option value="Licor de jabuticaba 1 litro" data-price="40">Licor de jabuticaba 1 litro R$ 40,00</option>
+                    <option value="Vinho artesanal de jabuticaba 1 litro" data-price="40">Vinho artesanal de jabuticaba 1 litro R$ 40,00</option>
+                    <option value="Queijo frescal 900g" data-price="30">Queijo frescal 900g R$ 30,00</option>
+                    <option value="Queijo frescal 500g" data-price="15">Queijo frescal 500g R$ 15,00</option>
+                    <option value="Queijo meia cura 900g" data-price="35">Queijo meia cura 900g R$ 35,00</option>
+                    <option value="Queijo temperado 500g" data-price="20">Queijo temperado 500g R$ 20,00</option>
+                    <option value="Doce de leite em pedaços 300g" data-price="12">Doce de leite em pedaços 300g R$ 12,00</option>
+                    <option value="Doce de amendoim em pedaços 300g" data-price="12">Doce de amendoim em pedaços 300g R$ 12,00</option>
+                    <option value="Canudinho de doce de leite 300g" data-price="12">Canudinho de doce de leite 300g R$ 12,00</option>
+                    <option value="Doce de leite puro pote 500g" data-price="20">Doce de leite puro no pote 500g R$ 20,00</option>
+                    <option value="Doce de leite/côco no pote 500g" data-price="20">Doce de leite/coco no pote 500g R$ 20,00</option>
+                    <option value="Doce de leite/maracujá no pote 500g" data-price="20">Doce de leite/maracujá no pote 500g R$ 20,00</option>
+                    <option value="Doce de leite/ameixa no pote 500g" data-price="20">Doce de leite/ameixa no pote 500g R$ 20,00</option>
+                    <option value="Doce de leite/morango no pote 500g" data-price="20">Doce de leite/morango no pote 500g R$ 20,00</option>
+                    <option value="Doce de leite/ambrosia no pote 500g" data-price="20">Doce de leite/ambrosia no pote 500g R$ 20,00</option>
+                    <option value="Doce de leite/café no pote 500g" data-price="20">Doce de leite/café no pote 500g R$ 20,00</option>
+                    <option value="Doce de leite/chocolate no pote 500g" data-price="20">Doce de leite/chocolate no pote 500g R$ 20,00</option>
+                    <option value="Doce de figo em calda 350g" data-price="15">Doce de figo em calda 350g R$ 15,00</option>
+                    <option value="Doce de mamão em calda 350g" data-price="15">Doce de mamão em calda 350g R$ 15,00</option>
+                    <option value="Doce de laranja em calda 350g" data-price="15">Doce de laranja em calda 350g R$ 15,00</option>
+                    <option value="Geléia de jabuticaba" data-price="18">Geléia de jabuticaba 350g R$ 18,00</option>
+                    <option value="Geléia de jabuticaba com pimenta" data-price="18">Geléia de jabuticaba com pimenta 350g R$ 18,00</option>
+                    <option value="Geléia de goiaba" data-price="18">Geléia de goiaba 350g R$ 18,00</option>
+                    <option value="Geléia de goiaba com pimenta" data-price="18">Geléia de goiaba com pimenta 350g R$ 18,00</option>
+                    <option value="Goiabada cascão" data-price="20">Goiabada cascão bandeja 700g R$ 20,00</option>
+                    <option value="Goiabada no pote" data-price="20">Goiabada no pote 500g R$ 20,00</option>
+                    <option value="Iogurte natural - pote 250ml" data-price="8">Iogurte natural - pote 250ml R$ 8,00</option>
+                    <option value="Iogurte de morango - pote 250ml" data-price="8">Iogurte de morango - pote 250ml R$ 8,00</option>
+                    <option value="Iogurte de abacaxi - pote 250ml" data-price="8">Iogurte de abacaxi - pote 250ml R$ 8,00</option>
+                    <option value="Iogurte de maracujá - pote 250ml" data-price="8">Iogurte de maracujá - pote 250ml R$ 8,00</option>
+                    <option value="Iogurte de ameixa - pote 250ml" data-price="8">Iogurte de ameixa - pote 250ml R$ 8,00</option>
+                    <option value="Patê de ricota com ervas pote 250g" data-price="10">Patê de ricota com ervas pote 250g R$ 10,00</option>
+                    <option value="Leite garrafa 2 litros" data-price="12">Leite garrafa 2 litros R$ 12,00</option>
+
+                </select>
+
+                <label for="forma-pagamento">Selecione a forma de pagamento:</label>
+                <select id="forma-pagamento" name="forma-pagamento" required>
+                    <option value="">Selecionar forma de pagamento</option>
+                    <option value="PIX">Quero pagar com PIX</option>
+                    <option value="CARTÃO DE CRÉDITO/DÉBITO">Quero pagar com cartão (Crédito ou Débito)</option>
+                </select>
+
+            </form>
+
+            <div id="carrinho" class="carrinho">
+                <h4>Carrinho de Compras</h4>
+                <ul id="itens-carrinho"></ul>
+                <br>
+                <p id="total-carrinho">Total: R$ 0,00</p>
+                <input type="hidden" id="valor-total" name="valor-total">
+            </div>
+
+            <button id="encomendar" class="green-button">Encomendar</button>
+ 
+            <br><br><br><br><br><br><br><br><br>
+
+            <div class="text-center">
+                <p><strong>Alguns produtos ficam indisponíveis em certas estações do ano.</strong></p>
+                <p><strong>Para entregas na região de Belo Horizonte, verifique a disponibilidade.</strong></p>
+                <p><strong>Consulte o prazo de entrega.</strong></p>
+            </div>
+
+            <br><br><br><br><br><br>
+
+            <div class="portfolio-section">
+                <h2 class="portfolio-title">Portfólio</h2>
+                <div class="portfolio-navigation">
+                    <div class="portfolio-gallery">
+                        <div class="portfolio-item">
+                            <img src="img/1.jpg" alt="1">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/2.jpg" alt="2">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/3.jpg" alt="3">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/4.jpg" alt="4">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/5.jpg" alt="5">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/6.jpg" alt="6">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/7.jpg" alt="7">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/8.jpg" alt="8">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/9.jpg" alt="9">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/10.jpg" alt="10">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/11.jpg" alt="11">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/12.jpg" alt="12">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/13.jpg" alt="13">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/14.jpg" alt="14">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/15.jpg" alt="15">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/16.jpg" alt="16">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/17.jpg" alt="17">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/18.jpg" alt="18">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/19.jpg" alt="19">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/20.jpg" alt="20">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/21.jpg" alt="21">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/22.jpg" alt="22">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/23.jpg" alt="23">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/24.jpg" alt="24">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/25.jpg" alt="25">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/26.jpg" alt="26">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/27.jpg" alt="27">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/28.jpeg" alt="28">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/29.jpeg" alt="29">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/30.jpeg" alt="30">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/31.jpeg" alt="31">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/32.jpeg" alt="32">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="img/33.jpeg" alt="33">
+                        </div>
+                        <div class="scroll-bar"></div>
+                    </div>
+                </div>  
+            </div>        
+        
+        <!-- Ícones -->
+        <div class="contatos">
+            <div class="footer-image">
+
+                <a href="https://api.whatsapp.com/send?phone=5531998699047&text=Olá,%20Sirley!%20Tenho%20uma%20dúvida." target="_blank">
+                    <img src="img/botao_wpp.png" alt="Conversar no WhatsApp" class="whatsapp-img">
+                </a>
+
+                <a href="https://goo.gl/maps/EjbBSubMBCHwfdGA6" target="_blank">
+                    <img src="img/botao_maps.png" alt="Acessar localização" class="maps-img">
+                </a>
+
+                <div id="pix-container">
+                    <a href="#" id="pix-link">
+                      <img src="img/botao_pix.png" alt="Obter Chave PIX" class="pix-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+            <br>
+
+            <div id="map">
+                <a href="https://goo.gl/maps/EjbBSubMBCHwfdGA6" target="_blank">
+                  <img src="img/mapa.png" alt="Localização"></a>
+                  <p class="mapa-desc">Clique no mapa para acessar a lozalização.</p>
+              </div>
+
+            <!-- Botão Dúvidas WhatsApp -->
+            <div class="wpp-image-inf align-right">
+                <a href="https://api.whatsapp.com/send?phone=5531998699047&text=Olá,%20Sirley!%20Tenho%20uma%20dúvida." target="_blank">
+                    <img src="img/botao_wpp.png" alt="Conversar no WhatsApp" class="whatsapp-img-inf">
+                </a>
+            </div>
+
+            <br><br><br>
+
+            <!-- Imagem Final e Texto Final -->
+            <div class="image-container index-image-container">
+                <img src="img/mini_logo.png" alt="Imagem Final" class="imagem-final">
+                <p class="text-final">Direitos Autorais © 2023 Expresso da Roça | Todos os direitos reservados.</p>
+                <a href="https://marquesweb.carrd.co" target="_blank">
+                    <p class="text-reference">Desenvolvido por Marques Web</p>
+                </a>
+            </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+          
+  <script src="script.js"></script>
+</body>
+</html lang="pt-br">

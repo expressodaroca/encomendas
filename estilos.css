@@ -1,0 +1,447 @@
+/* Estilos Gerais */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  max-width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+
+/* # Barra de navegação */
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #50503C, #3f3f2f);
+  border-radius: 7px;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 0.8em 1em;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border-radius: 7px;
+  font-size: 1.5em;
+}
+
+.navbar li a:hover {
+  background-color: #dfb200;
+}
+
+.navbar li.active a {
+  background-color: #CDA300;
+  color: #000000;
+}
+
+/* Logo do Site */
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  max-width: 50%;
+  height: auto;
+  max-width: 700px;
+}
+
+/* # Títulos */
+h1 {
+  color: #383838;
+  text-align: left;
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+h2 {
+  color: #383838;
+  text-align: left;
+  font-size: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h3 {
+  color: #383838;
+  text-align: left;
+  font-size: 2em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h4 {
+  color: #383838;
+  text-align: left;
+  font-size: 1.6em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h5 {
+  color: #383838;
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.subtitle {
+  color: #383838;
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 3em;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+  color: #dd3737;
+  font-size: 1.9em;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+/* # Botões de Redes Sociais */
+.footer-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.footer-image a {
+  margin: 0 20px; /* Espaçamento entre os botões */
+}
+
+.footer-image a img {
+  transition: transform 0.5s ease;
+}
+
+.footer-image a:hover img {
+  transform: scale(1.2);
+}
+
+.whatsapp-img {
+  max-width: 110px;
+  height: auto;
+  margin-top: 100px;
+  margin-left: 5px;
+}
+
+.maps-img {
+  max-width: 110px;
+  height: auto;
+  margin-top: 100px;
+  margin-left: 5px;
+}
+
+.pix-img {
+  max-width: 170px;
+  height: auto;
+  margin-top: 100px;
+  margin-left: 5px;
+}
+
+#pix-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#chave-pix {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#copiar-pix {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos do Mapa */
+#map {
+  text-align: center; 
+  margin-top: 20px; 
+}
+
+#map img {
+  max-width: 100%; /* Largura máxima da imagem */
+  max-height: 30%; /* Altura máxima da imagem */
+  border-radius: 7px;
+
+}
+
+.mapa-desc {
+  margin-top: 10px; 
+}
+
+.mapa-desc {
+  color: #000000;
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* # Botão de Dúvida Whatsapp */
+.wpp-image-inf a img {
+  transition: transform 0.5s ease;
+}
+
+.wpp-image-inf a:hover img {
+  transform: scale(1.2);
+}
+
+.wpp-image-inf {
+  position: fixed;
+  bottom: 20px; 
+  right: 10px; /* Ajuste de margem */
+  text-align: right; /* Alinhar o conteúdo à direita */
+  z-index: 1; /* Sobreposição */
+}
+
+.whatsapp-img-inf {
+  max-width: 15%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .wpp-image-inf {
+    display: none; /* Ocultar em telas menores */
+  }
+}
+
+/* Formulário e carrinho */
+.form-text{
+  color: #383838;
+  text-align: center;
+  align-items: center;
+  font-size: 1.6em;
+  margin-bottom: 25px; 
+}
+
+form {
+  padding: 40px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #383838;
+  font-weight: bold;
+  font-size: 1.6em;
+}
+
+input[type="email"],
+input[type="text"],
+select {
+  width: 90%;
+  padding: 20px;
+  font-size: 1.4em;;
+  border: 1px solid #383838;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.input-group label {
+  margin-bottom: 10px;
+}
+
+.input-group input[type="email"],
+.input-group input[type="text"],
+.input-group select {
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 1.6em;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#itens-carrinho li {
+  margin-bottom: 15px;
+  font-size: 1.7em;
+}
+
+#total-carrinho {
+  font-size: 1.7em;
+  color: #383838;
+}
+
+.green-button {
+  background-color: green;
+  color: white;
+  padding: 1.1em 1.4em;
+  font-size: 1.5em;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+
+.remover-item {
+  color: white;
+  background-color: rgb(223, 64, 64);
+  border: none;
+  padding: 7px 14px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 7px;
+  position: relative;
+}
+
+.remover-item:hover {
+  background-color:rgb(223, 64, 64);
+}
+
+.text-carrinho {
+text-align: center;
+color: #383838;
+}
+
+/* # Portfólio */
+.portfolio-section {
+  padding: 40px 0;
+}
+
+.portfolio-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.7em;
+  color: #383838;
+}
+
+.portfolio-gallery {
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  padding: 20px;
+  position: relative;
+}
+
+/* Adiciona um cursor personalizado para indicar que a rolagem é possível */
+.portfolio-gallery {
+  cursor: grab;
+}
+
+/* Muda o cursor para 'grabbing' enquanto arrasta o conteúdo */
+.portfolio-gallery.grabbing {
+  cursor: grabbing;
+}
+
+.portfolio-item {
+  flex: 0 0 400px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 600px;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.portfolio-item h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.portfolio-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Estilos para a barra de rolagem */
+.scroll-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #d1d1d1; /* Cor cinza */
+  transition: width 0.2s ease-in-out;
+}
+
+
+/* Imagem final logo */
+.imagem-final {
+  max-width: 35%; /* Defina o tamanho máximo desejado para a imagem */
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+.image-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* # Texto Direitos Autorais */
+.text-final {
+  text-align: center;
+  font-size: 1.1em;
+  color: #000000;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* # Texto de Referência do Desenvolvedor */
+.text-reference {
+  text-align: center;
+  font-size: 1.1em;
+  color: #000000;
+  margin-top: 5px;
+  margin-bottom: 1px;
+}
